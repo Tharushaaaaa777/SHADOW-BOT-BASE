@@ -13,33 +13,33 @@ cmd({
     try {
 
         let teksnya = `
- Hello 🎥 Ｉ ａｍ   𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗢𝗩𝗜𝗘 ✘ 𝗞𝗜𝗟𝗔𝗥  ❯❯  🎥
-╭────────────────────●●►
-| *🛠️  𝙑𝙀𝙍𝙎𝙄𝙊𝙉:* ${require("../package.json").version}
-| *📡  𝙈𝙀𝙈𝙊𝙍𝙔:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-| *⏱️  𝗥𝗨𝗡𝗧𝗜𝗠𝗘:* ${runtime(process.uptime())}
-╰─────────────────────●●►
- *║  🎥  ❮❮  𝗦𝗛𝗔𝗗𝗢𝗪  𝗠𝗢𝗩𝗜𝗘  ✘  𝗞𝗜𝗟𝗔𝗥  𝗠𝗘𝗡𝗨  𝗟𝗜𝗦𝗧 ❯❯  🎥  ║*`;
+ 🅷🅴🅻🅻🅾 🆆🅴🅻🅲🅾🅼🅴 🆃🅾 🆃🅷🅰🆁🆄🆂🅷🅰-🅼🅳,
+*╭────────────────────●●►*
+*| 🛠️  ᴠᴇʀᴛɪᴏɴ:* ${require("../package.json").version}
+*| 📡  ᴍᴇᴍᴏʀʏ:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+*| ⏱️  ʀᴜɴᴛɪᴍᴇ:* ${runtime(process.uptime())}
+*╰─────────────────────●●►*
+*ᴛʜᴀʀᴜꜱʜᴀ-ᴍᴅ ᴍᴇɴᴜ  ʟɪꜱᴛ 🤤* `;
 
         let imageUrl = "https://i.ibb.co/ByN33Zx/b776be1f09d94bc6.jpg";
 
         let vpsOptions = [
-            { title: "ᴏᴡɴᴇʀ menu ☠️", description: "Bot Owner Only Commands", id: `${prefix}ownermenu` },
-            { title: "ᴅᴏᴡɴʟᴏᴀᴅ menu ☠️", description: "Get Bot Download Menu", id: `${prefix}downloadmenu` },
-            { title: "ᴍᴏᴠɪᴇ ᴍᴇɴᴜ ☠️", description: "Get Bot Movie Menu", id: `${prefix}moviemenu` },
-            { title: "ᴄᴏɴᴠᴇʀᴛ menu ☠️", description: "Get Bot Convert Menu", id: `${prefix}convertmenu` },
-            { title: "ɢʀᴏᴜᴘ ᴍᴇɴᴜ ☠️", description: "Get Group Only Commands", id: `${prefix}groupmenu` },
-            { title: "ᴀɪ ᴍᴇɴᴜ ☠️", description: "Get Bot AI Commands List", id: `${prefix}aimenu` },
-            { title: "ꜱᴇᴀʀᴄʜ menu ☠️", description: "Get Bot Search Menu", id: `${prefix}searchmenu` },
-            { title: "ꜰᴜɴ menu ☠️", description: "Fun Joke Menu Bot", id: `${prefix}funmenu` },
-            { title: "ʙᴜɢ menu ☠️", description: "Owner Only Bug Menu", id: `${prefix}bugmenu` },
-            { title: "ʀᴀɴᴅᴏᴍ ᴍᴇɴᴜ ☠️", description: "Random Commands Menu", id: `${prefix}randommenu` }
+            { title: "ᴏᴡɴᴇʀ ᴍᴇɴᴜ 👤", description: "Bot Owner Only Commands", id: `${prefix}ownermenu` },
+            { title: "ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ 📥", description: "Get Bot Download Menu", id: `${prefix}downloadmenu` },
+            { title: "ᴍᴏᴠɪᴇ ᴍᴇɴᴜ 🎥", description: "Get Bot Movie Menu", id: `${prefix}moviemenu` },
+            { title: "ᴄᴏɴᴠᴇʀᴛ ᴍᴇɴᴜ 🫧", description: "Get Bot Convert Menu", id: `${prefix}convertmenu` },
+            { title: "ɢʀᴏᴜᴘ ᴍᴇɴᴜ 👥", description: "Get Group Only Commands", id: `${prefix}groupmenu` },
+            { title: "ᴀɪ ᴍᴇɴᴜ 🤖", description: "Get Bot AI Commands List", id: `${prefix}aimenu` },
+            { title: "ꜱᴇᴀʀᴄʜ ᴍᴇɴᴜ 🔍", description: "Get Bot Search Menu", id: `${prefix}searchmenu` },
+            { title: "ꜰᴜɴ ᴍᴇɴᴜ 😂", description: "Fun Joke Menu Bot", id: `${prefix}funmenu` },
+            { title: "ʙᴜɢ ᴍᴇɴᴜ ☠️", description: "Owner Only Bug Menu", id: `${prefix}bugmenu` },
+            { title: "ʀᴀɴᴅᴏᴍ ᴍᴇɴᴜ 🫟", description: "Random Commands Menu", id: `${prefix}randommenu` }
         ];
 
         let buttonSections = [
             {
-                title: "List of SHADOW MOVIE X Bot Commands",
-                highlight_label: "SHADOW MOVIE X",
+                title: "List of THARUSHA-MD Bot Commands",
+                highlight_label: "THARUSHA-MD",
                 rows: vpsOptions
             }
         ];
@@ -52,7 +52,7 @@ cmd({
                 nativeFlowInfo: {
                     name: "single_select",
                     paramsJson: JSON.stringify({
-                        title: "Choose Menu Tab 📖",
+                        title: "Select a menu tab 🤤",
                         sections: buttonSections
                     })
                 }
@@ -71,7 +71,7 @@ cmd({
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '@newsletter',
-                    newsletterName: `SHADOW 💗`,
+                    newsletterName: `𝐓𝐇𝐀𝐑𝐔𝐒𝐇𝐀-𝐌𝐃`,
                     serverMessageId: 143
                 }
             }
