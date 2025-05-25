@@ -36,17 +36,17 @@ cmd({
             else if (os.hostname().length == 8) hostname = 'koyeb'
             else hostname = os.hostname()
             let monspace = '```'
-            const sssf = `${monspace}👋 Hello ${pushname} I'm alive now${monspace}
-
-*👨‍💻 Im SHADOW-MD whatsapp bot 👨‍💻*
-╭────────●●►   
-> *Version:* ${require("../package.json").version}
-> *Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-> *Runtime:* ${runtime(process.uptime())}
-> *Platform:* ${hostname}
-╰────────────────────●●►   
-*🚀 WELCOM TO SHADOW MD 🚀*
-*❯ Welcome Shado md whats app bot you can download video songs and various videos through this bot. Shado md owner is Lakshan Damayantha.. It also gives you the ability to solve the new revolution in technology and technology problems and there is great potential here. This technology is also related to AI.*
+            const sssf = `${monspace}👋 🅷🅴🅻🅻🅾 ${pushname} 🅸'🅼 🅰🅻🅸🆅🅴 🅽🅾🆆${monspace}
+	    
+*┏━━━━━━━━━━━━━━━━━━━━┓*
+*┃⚡ ᴠᴇʀᴛɪᴏɴ :* ${require("../package.json").version}
+*┃📁 ᴍᴇᴍᴏʀʏ :* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+*┃📍 ʀᴜɴᴛɪᴍᴇ :* ${runtime(process.uptime())}
+*┃🔰 ᴘʟᴀᴛꜰᴏʀᴍ :* ${hostname}
+*┗━━━━━━━━━━━━━━━━━━━━┛*
+   
+*🚀 WELCOM TO THARUSHA-MD 🚀*
+*❯ Welcome Tharusha md whats app bot you can download video songs and various videos through this bot. Tharusha md owner is Tharusha Sandipa.. It also gives you the ability to solve the new revolution in technology and technology problems and there is great potential here. This technology is also related to AI.*
 `
 
             let buttons = [{
@@ -60,13 +60,21 @@ cmd({
                 {
                     name: "quick_reply",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "Get Menu",
+                        display_text: "Menu 📜",
                         id: "{prefix}menu"
                     }),
                 }
+
+                {
+                    name: "quick_reply",
+                    buttonParamsJson: JSON.stringify({
+                        display_text: "ping 📍",
+                        id: "{prefix}ping"
+                    }),
+			    }
             ]
             let opts = {
-                image: `https://i.imgur.com/Mkp0Z9o.jpeg`,
+                image: `https://i.ibb.co/ZRSyWKBj/488.jpg`,
                 header: '',
                 footer: config.FOOTER,
                 body: sssf
@@ -74,7 +82,7 @@ cmd({
             }
             return await conn.sendButtonMessage(from, buttons, m, opts)
         } catch (e) {
-            reply('*Error !!*')
+            reply('*❌ Error !!*')
             console.log(e)
         }
     })
